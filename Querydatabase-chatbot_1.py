@@ -42,11 +42,6 @@ def extract_sql_query(response_text):
         return sql_query
     return response_text  # Fallback to returning the full response if pattern not found
 
-
-
-
-
-
 st.subheader('Database Query Interface')
 
 user_query = st.text_area('Enter your query:', '')
@@ -54,38 +49,6 @@ user_query = st.text_area('Enter your query:', '')
 if st.button('Submit'):
     # Using OpenAI to interpret the query (This is a placeholder; in a real app, you'd need to process the response to form a SQL query)
     try:
-        # response = client.chat.completions.create(
-        #           model="gpt-3.5-turbo",
-        #           prompt="Translate this to SQL: {user_query}",
-        #           temperature=0.3,
-        #           max_tokens=150
-        # )
-        # sql_query = response.choices[0].text.strip()
-        # st.text(f"Generated SQL Query: {sql_query}")
-        # response = client.chat.completions.create(
-        #     model="text-davinci-003",
-        #     prompt=f"Translate this English sentence to an SQL query: '{user_query}'",
-        #     temperature=0.3,
-        #     max_tokens=64
-        # ).choices[0].text.strip()
-        # response = openai.ChatCompletion.create(
-        #     model="gpt-3.5-turbo",
-        #     messages=[
-        #         {"role": "system", "content": "You are a helpful assistant."},
-        #         {"role": "user", "content": f"Translate this English sentence to an SQL query: '{user_query}'"},
-        #     ]
-        # )
-        #
-        # sql_query = response.choices[0].message['content'].strip()
-        # response = openai.completions.create(
-        #     model="gpt-3.5-turbo",  # or "gpt-3.5-turbo" based on your preference and available models
-        #     prompt=f"Translate this English sentence to an SQL query: '{user_query}'",
-        #     temperature=0.3,
-        #     max_tokens=64
-        # )
-        # # Extracting the text from the response
-        # sql_query = response.choices[0].text.strip()
-        # print(sql_query)
         response = openai.ChatCompletion.create(
         model = "gpt-3.5-turbo",
         messages = [

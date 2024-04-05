@@ -9,7 +9,7 @@ import openai
 import pandas as pd
 
 # OpenAI API key -- Use your Key here
-###openai.api_key = 'YOUR KEY'
+openai.api_key = 'YOUR KEY'
 
 # Database connection settings
 DB_HOST = 'ms.itversity.com'

@@ -21,7 +21,7 @@ DB_NAME = 'retail_db'
 
 # client = OpenAI(
 #     # This is the default and can be omitted
-#     api_key='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',
+#     api_key='your key',
 # )
 
 

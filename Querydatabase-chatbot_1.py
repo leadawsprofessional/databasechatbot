@@ -8,21 +8,14 @@ import pymysql
 import openai
 import pandas as pd
 
-# OpenAI API key
-openai.api_key = 'YOUR KEY'
+# OpenAI API key -- Use your Key here
+###openai.api_key = 'YOUR KEY'
 
 # Database connection settings
 DB_HOST = 'ms.itversity.com'
 DB_USER = 'retail_user'
 DB_PASS = 'itversity'
 DB_NAME = 'retail_db'
-
-#from openai import OpenAI
-
-# client = OpenAI(
-#     # This is the default and can be omitted
-#     api_key='your key',
-# )
 
 
 def get_db_connection():
